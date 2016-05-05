@@ -5,3 +5,8 @@ $(document).ready(function() {
        interval: 5000
    });
 });
+
+$('.flip').click(function(){
+        $(this).find('.card').toggleClass('flipped');
+
+    });

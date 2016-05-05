@@ -18,7 +18,8 @@ body {
 
 h1, p, h3 {
   font-family: 'Gloria Hallelujah', cursive;
-  color: #006472;
+  /*color: #006472;*/
+  color: #0078be;
   /*color: #007485;*/
   /*color: #0087be;*/
   font-size: 35px;
@@ -30,7 +31,7 @@ h1 {
 }
 
 .row-fluid {
-  background-color: rgba(0,167,190, 0.7);
+  background-color: rgba(0,167,190, 0.9);
 }
 
 .img-responsive {
@@ -51,7 +52,8 @@ h1 {
 .about {
   font-size: 25px;
   font-family: 'Gloria Hallelujah', cursive;
-  color: #006472;
+  /*color: #006472;*/
+  color: #0078be;
 }
 
 /*
@@ -72,3 +74,51 @@ h1 {
 	max-width: 100px;
 	height: 60px;
 }
+
+/*flip card for portfolio*/
+
+.card .back {
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    background-color:  rgba(0,167,190, 0.9);
+}
+
+.flip {
+  -webkit-perspective: 800;
+perspective: 800;
+
+    position: relative;
+ text-align: center;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+.flip .card {
+
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.flip .card .face {
+
+  -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+  z-index: 2;
+
+}
+.flip .card .front {
+  position: absolute;
+   width: 100%;
+  z-index: 1;
+
+}
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+  .inner{margin:0px !important;}
