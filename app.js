@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log('lol')
 
   $('#carousel-example-generic').carousel({
-    interval: 3000
+    interval: 2000
    });
 });
 
