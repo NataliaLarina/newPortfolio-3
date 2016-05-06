@@ -2,11 +2,12 @@ $(document).ready(function() {
   console.log('lol')
 
   $('#carousel-example-generic').carousel({
-       interval: 5000
+    interval: 3000
    });
 });
 
-$('.flip').click(function(){
-        $(this).find('.card').toggleClass('flipped');
+  $('.flip').click(function(){
 
-    });
+    $(this).find('.card').toggleClass('flipped');
+
+  });
